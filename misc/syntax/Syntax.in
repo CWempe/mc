@@ -214,7 +214,7 @@ include debian-sources-list.syntax
 file control$ Debian\scontrol\sfile
 include debian-control.syntax
 
-file (rules|rocks)$ Debian\srules
+file (rocks)$ Debian\srules
 include makefile.syntax
 
 file .\*changelog$ Debian\schangelog\sfile
@@ -309,6 +309,21 @@ include kotlin.syntax
 
 file ..\*\\.swift$ Swift\sProgram
 include swift.syntax
+
+file ..\*\\.(items)$ openHAB\sItems
+include openhab-items.syntax
+
+file ..\*\\.(sitemap)$ openHAB\sSitemap
+include openhab-sitemap.syntax
+
+file ..\*\\.(persist)$ openHAB\sPersistence
+include openhab-persist.syntax
+
+file ..\*\\.(rules)$ openHAB\sRules
+include openhab-rules.syntax
+
+file ..\*\\.(script)$ openHAB\sScript
+include openhab-script.syntax
 
 file .\* unknown
 include unknown.syntax
